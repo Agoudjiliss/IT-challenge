@@ -4,6 +4,7 @@ import (
     "fmt"
     "net/http"
     "net/url"
+    "github.com/Agoudjiliss/IT-challenge/internal/configs"
 )
 
 // Run start the server on defined port
