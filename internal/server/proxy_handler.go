@@ -29,7 +29,6 @@ func ProxyRequestHandler(proxy *httputil.ReverseProxy, targetURL *url.URL, endpo
             return
         }
 
-        // Update the headers to allow for SSL redirection
         r.URL.Host = targetURL.Host
         r.URL.Scheme = targetURL.Scheme
         r.Header.Set("X-Forwarded-Host", r.Header.Get("Host"))
