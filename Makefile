@@ -19,3 +19,6 @@ run-proxy-server:
 	# Ensure tabs are used here
 	go run cmd/main.go
 
+## run-all: starts demo services and the proxy server
+.PHONY: run-all
+run-all: run-containers run-proxy-server
