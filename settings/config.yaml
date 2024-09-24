@@ -1,6 +1,8 @@
 server:
   host: "localhost"
   listen_port: "8090"
+  cert_file: "SSL:TCL/server.crt"
+  key_file: "SSL:TCL/server.key"
 
 resources:
   - name: Server1
